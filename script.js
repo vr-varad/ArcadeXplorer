@@ -3,10 +3,19 @@ const gamesContainer = document.querySelector('.games');
 gamesContainer.addEventListener('click', (e) => {
   if (e.target.classList.contains('game')) {
     const gameId = e.target.id;
-    window.location.href = `./Games/Game${gameId}/index.html`;
+    let gamePath = '';
+
+    if (gameId === '1') {
+      // Game 1 in JavaScript
+      gamePath = `./Games/game${gameId}/index.html`;
+    } else if (gameId === '2') {
+      // Game 2 in React (public folder structure)
+      gamePath = `./Games/game${gameId}/public/index.html`;
+    }
+
+    window.location.href = gamePath;
   }
 });
-
 
 const game_nav = document.querySelector('.game-section')
 const game_list = document.getElementById('games')
