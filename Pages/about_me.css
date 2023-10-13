@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+ background-color: #39244e;
+ font-family: 'Young Serif', serif;
+ color: white;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1c1029;
+}
+
+nav h2{
+  margin: 0 20px;
+  font-size: 2.5vw;
+  color: white;
+  letter-spacing: 5px;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 20px;
+  font-size: 2vw;
+  color: white;
+}
+nav p{
+  
+  color: white;
+  letter-spacing: 4px;
+  font-size: 4vw;
+  margin: 0;
+  padding: 0;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+}
+
+span{
+  font-size: 9vw;
+}
+header{
+  margin-top: 100px;
+  padding: 0 40px;
+}
+header p{
+  
+  text-align: center;
+  color: white;
+  letter-spacing: 4px;
+  font-size: 1vw;
+  margin: 100px;
+}
+
+footer {
+  height: 20vw;
+  width: 100vw;
+  background-color: #1c1029;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left span {
+  font-weight: bold;
+  font-size: 2vw;
+  letter-spacing: 10px;
+}
+
+.footer-right a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.copyright {
+  font-size: 1vw;
+  letter-spacing: 10px;
+}
