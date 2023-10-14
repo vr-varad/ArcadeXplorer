@@ -7,7 +7,7 @@ gamesContainer.addEventListener('click', (e) => {
 
     if (gameId === '1') {
       // Game 1 in JavaScript
-      gamePath = `./Games/Game${gameId}/index.html`;
+      gamePath = `./Games/game${gameId}/index.html`;
     } else if (gameId === '2') {
       // Game 2 in React (public folder structure)
       gamePath = `./Games/game${gameId}/public/index.html`;
