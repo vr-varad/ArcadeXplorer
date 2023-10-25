@@ -10,7 +10,7 @@ gamesContainer.addEventListener('click', (e) => {
       gamePath = `./Games/game${gameId}/index.html`;
     } else if (gameId === '2') {
       // Game 2 in React (public folder structure)
-      gamePath = `./Games/game${gameId}/public/index.html`;
+      gamePath = `https://timely-eclair-6a1620.netlify.app/`;
     } else if(gameId === '3'){
       gamePath = `./Games/game${gameId}/index.html`
     }
