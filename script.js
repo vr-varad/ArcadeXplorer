@@ -11,6 +11,8 @@ gamesContainer.addEventListener('click', (e) => {
     } else if (gameId === '2') {
       // Game 2 in React (public folder structure)
       gamePath = `./Games/game${gameId}/public/index.html`;
+    } else if(gameId === '3'){
+      gamePath = `./Games/game${gameId}/index.html`
     }
 
     window.location.href = gamePath;

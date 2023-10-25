@@ -94,7 +94,7 @@ main h2{
   margin-left: 30px;
   font-weight: lighter;
 }
-.games{
+main .games{
   display: flex;
   flex-wrap: wrap;
   margin: 40px;
@@ -105,7 +105,7 @@ main .game{
   margin: 10px;
   flex: 1 1 1;
   height: 60vh;
-  width: 20vw;
+  width: 400px;
   background-color: #180c25;
   border-radius: 10px;
   display: flex;
