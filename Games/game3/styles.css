@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap');
+
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+
+/* Heading */
+.heading{
+  text-align: center;
+  margin-bottom: 40px;
+  padding:5px 0;
+}
+
+.heading {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.heading h1{
+  font-size: 3vw;
+  letter-spacing: 5px;
+}
+.heading p {
+  font-weight: lighter;
+  font-size: 1.3vw;
+}
+
+/* Tools */
+.tools{
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tool {
+  font-size: 50px;
+  transition: font-size 0.2s; /* Add a smooth transition effect */
+}
+
+/* Increase the size on hover */
+.tool:hover {
+  font-size: 65px; /* Change the size to your desired value on hover */
+}
+
+.color_picker{
+  font-size: 30px;
+}
+.eraser,.weight{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Canvas */
+#mycanvas{
+  border: 3px solid black;
+}
+
+.toolRange{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .tool {
+  font-size: 30px;
+  transition: font-size 0.2s; /* Add a smooth transition effect */
+}
+
+/* Increase the size on hover */
+.tool:hover {
+  font-size: 45px; /* Change the size to your desired value on hover */
+}
+}

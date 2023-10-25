@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StrokeWeb</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" href="./paint-icon.png">
+</head>
+<body>
+  <div class="heading">
+    <h1>StokeWeb</h1>
+    <p>Unleash your creativity with our online canvas for digital painting and brush your imagination to life.</p>
+  </div>
+  <div class="tools">
+    <div class="color_picker">
+      <label for="color">Pick a color <span></span>: </label>
+      <input type="color" name="color" id="color" class="color">
+    </div>
+    <!-- 1st tool -->
+    <div class="toolRange">
+      <div class="circle"><i class="tool fa-regular fa-circle "></i></div>
+      <label for="myRange">Circle Radius : <span class="circleRadius">50</span></label>
+      <div class="slider">
+        <input type="range" min="1" max="500" value="250" class="circleslider" id="myRange" style="color: black;">
+      </div>
+    </div>
+    <!-- 2nd tool -->
+    <div class="toolRange">
+      <div class="square"><i class="tool fa-regular fa-square"></i></div>
+      <label for="myRange">Side Length: <span class="squareSide">50</span> </label>
+      <div class="slider">
+        <input type="range" min="1" max="500" value="250" class="squareslider" id="myRange">
+      </div>
+    </div>
+    <!-- 3rd tool -->
+    <div class="toolRange">
+      <div class="pencil"><i class="tool fa-solid fa-pencil "></i></div>
+      <label for="myRange">Stroke Weight: <span class="strokeWeight">1</span> </label>
+      <div class="slider">
+        <input type="range" min="1" max="100" value="1" class="pencilslider" id="myRange">
+      </div>
+    </div>
+    <!-- 4th tool -->
+    <div class="eraser">
+      <i class="fa-solid fa-eraser tool"></i>
+      <p>Erase Everything</p>
+    </div>
+    <!-- 5th tool -->
+    <div class="weight">
+      <div class="slider">
+        <input type="range" min="1" max="30" value="15" class="weightSlider" id="myRange">
+      </div>
+      <p>Stroke Weight: <span id="weight"></span> <br>For Circle and Square</p>
+    </div>
+  </div>
+  <hr>
+  <canvas id="mycanvas" height="800" width="2043" ></canvas>
+  <script src="./script.js"></script>
+</body>
+</html>
