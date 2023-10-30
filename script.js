@@ -13,6 +13,8 @@ gamesContainer.addEventListener('click', (e) => {
       gamePath = `https://timely-eclair-6a1620.netlify.app/`;
     } else if(gameId === '3'){
       gamePath = `./Games/game${gameId}/index.html`
+    } else if (gameId === '4'){
+      gamePath = 'https://653f2a4deb14880c3e9bbdda--prismatic-hummingbird-32f173.netlify.app/'
     }
 
     window.location.href = gamePath;
